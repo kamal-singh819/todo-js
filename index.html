@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container tasks-container row justify-content-center mx-auto">
+    <div class="header-fixed-container col-12 col-lg-8 col-xl-7 mt-2 px-0">
+      <h2 class="heading text-center my-3 text-white fw-bold">Tasks to do</h2>
+      <div class="input-section d-flex gap-2 p-0">
+        <input class="input w-100" type="text" placeholder="Add a Task" />
+        <button type="submit" class="add text-white">+</button>
+        <button type="submit" class="update text-white">Update</button>
+      </div>
+      <div class="options d-flex gap-2 text-nowrap overflow-scroll px-0 py-2">
+        <button class="option-btn all-show text-white">
+          All <span class="all-count count d-inline-flex justify-content-center align-items-center">0</span>
+        </button>
+        <button class="option-btn active-show text-white">
+          Active
+          <span class="active-count count d-inline-flex justify-content-center align-items-center">0</span>
+        </button>
+        <button class="option-btn complete-show text-white">
+          Completed
+          <span class="completed-count count d-inline-flex justify-content-center align-items-center">0</span>
+        </button>
+        <button class="option-btn clear-completed text-white">
+          Clear Completed
+        </button>
+      </div>
+    </div>
+    <div class="tasks-section col-12 col-lg-8 col-xl-7 mt-2 px-0"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
